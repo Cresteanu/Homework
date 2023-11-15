@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Sign up</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <form action="">
+        <h1>Sign Up</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username" required>
+        </div>
+
+        <div class="input-box">
+            <input type="password" placeholder="Password" name="password" autocomplete="current-password" required="" id="id_password">
+            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+
+        </div>  
+
+        <div class="input-box">
+          <input type="password" placeholder="Re-Password" name="re-password" autocomplete="re-password" required="" id="re-password">
+          <i class="far fa-eye" id="toggleRePassword" style="margin-left: -30px; cursor: pointer;"></i>
+
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox"> Stay signed in</label>
+        </div>
+
+        <button class="round-button">
+          <span class="arrow"></span>
+        </button>
+        
+        <div class="help-buttons">
+           <p><a  href="troubles.html" target="_blank">CAN'T SIGN IN?</a></p>
+          <p><a href="index2.html">SIGN IN</a></p> 
+       </div>
+  
+    </form>
+  </div>
+
+  <!-- JS Function: "Toggle multiple password field visibility"-->
+  <script> 
+
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
+
+      togglePassword.addEventListener('click', function (e) {
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      this.classList.toggle('fa-eye-slash');
+   });
+
+    const toggleRePassword = document.querySelector('#toggleRePassword');
+    const rePassword = document.querySelector('#re-password');
+
+        toggleRePassword.addEventListener('click', function () {
+        const type = rePassword.getAttribute('type') === 'password' ? 'text' : 'password';
+        rePassword.setAttribute('type', type);
+        this.classList.toggle('fa-eye-slash');
+   });
+    
+	</script>
+</body>
+
+</html>

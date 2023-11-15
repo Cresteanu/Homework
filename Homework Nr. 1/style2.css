@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Khand:wght@500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Khand', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin: 0;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size:cover;
+    backdrop-filter: blur(3px);
+}
+    .wrapper
+{
+    width: 489px;
+    height: 636px;
+    flex-shrink: 0;
+    background: #fff;
+    margin-top: 194px;
+    margin-bottom: 194px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+}
+.wrapper h1{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 102px;
+    margin-bottom: 24px;
+}
+
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin-left: 48px;
+    margin-right: 52px;
+    margin-top: 14px;
+}
+
+.input-box input{
+    width: 389px;
+    height: 46px;
+    background: #f0f0f0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #5f5f5f;
+    padding:13px 13px 13px;
+    
+
+}
+.input-box input::placeholder{
+    color: #C1C1C1;
+    font-family: Khand;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.wrapper .remember-forgot{
+   text-align: left;
+   padding-left: 50px;
+   padding-top: 10px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.help-buttons{
+    text-align: center;
+    font-family: Khand;
+    font-size: 15px;
+    font-style: medium;
+    font-weight: 700;
+    line-height: 25px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin-left: 48px;
+    margin-right: 52px;
+    margin-bottom: 20px;
+    
+}
+.help-buttons a {
+    color: #C1C1C1;
+    text-decoration: none; 
+}
+.help-buttons a:hover {
+    text-decoration:underline;
+}
+
+.round-button {
+    position: relative;
+    top:100px;
+    bottom:0; 
+    left: 200px;
+    right: 0;
+    width: 84px;
+    height: 84px;
+    border-radius: 40%;
+    background-color: #fff;
+    border: solid;
+    border-width: 3px;
+    border-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  
+  .arrow {
+    display: inline-block;
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+    border-top: 2px solid #D9D9D9;
+    border-left: 2px solid #D9D9D9;
+    border-width: 3px;
+    transform-origin: center;
+    transform: rotate(135deg);
+    
+  }
+  .arrow::after{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: #D9D9D9;
+    transform: rotate(-45deg) translate(6px, 2px);
+  }

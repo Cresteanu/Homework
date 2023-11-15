@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Khand:wght@500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Khand', sans-serif; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin: none;
+    background: url(background.jpg) no-repeat center center fixed;
+    background-size:cover;
+    backdrop-filter: blur(3px);
+}
+.text{
+    position: fixed;
+    
+    top:201px;
+    text-align: center;
+    color:#fff;
+    font-family: Inter;
+}
+.text h1{
+    font-size: 6vw;
+}
+.text h2{
+    font-size: 2vw;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    height: 100px;
+    margin: 240px auto;
+}
+.box{
+ 
+    text-align: center;
+    width: 307px;
+    height: 351px;
+    background: white;
+    float: left;
+    margin:15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 2vw;
+}
+.box h3{
+    padding: 10px;
+}
+.content{
+    position: relative;
+    top:150px;
+    padding: 30px;
+    color: #B8B8B8;
+    text-align: center;
+    font-family: Inter;
+}
+#img{
+    position:relative;
+    bottom:230px;
+
+}
+
